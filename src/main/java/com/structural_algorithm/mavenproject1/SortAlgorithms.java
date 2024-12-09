@@ -10,7 +10,7 @@ import java.util.Iterator;
  *
  * @author ASUS
  */
-public class SearchAlgorithms {
+public class SortAlgorithms {
 
     public static int[] insertionSort1(int arr[]){
         if (arr.length <= 1) {
