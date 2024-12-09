@@ -12,7 +12,7 @@ import java.util.Arrays;
  */
 public class SearchAlgorithm {
     
-    public static <T extends Comparable<T>> Integer binarySearchPosition(T[] arr, T n){
+    public static <T extends Comparable<T>> int binarySearchPosition(T[] arr, T n){
         
         if (arr.length <= 0) {
             return -1;

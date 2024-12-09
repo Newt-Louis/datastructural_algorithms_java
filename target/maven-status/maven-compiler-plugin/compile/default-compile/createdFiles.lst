@@ -1,5 +1,3 @@
-com\structural_algorithm\mavenproject1\StructuralAlgorithm.class
-testpackage2\NewJFrame$1.class
-testpackage2\NewJFrame.class
-com\structural_algorithm\mavenproject1\Mavenproject1.class
-testpackage2\NewJFrame$2.class
+com\structural_algorithm\mavenproject1\SortAlgorithms.class
+com\structural_algorithm\mavenproject1\index.class
+com\structural_algorithm\mavenproject1\SearchAlgorithm.class
