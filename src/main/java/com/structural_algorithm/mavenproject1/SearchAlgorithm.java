@@ -12,7 +12,7 @@ import java.util.Arrays;
  */
 public class SearchAlgorithm {
     
-    public static <T> Integer binarySearchPosition(T[] arr, T n){
+    public static <T extends Comparable<T>> Integer binarySearchPosition(T[] arr, T n){
         
         if (arr.length <= 0) {
             return -1;
@@ -20,8 +20,8 @@ public class SearchAlgorithm {
         
         Arrays.sort(arr);
         
-        if (arr[0] instanceof ) {
-            
+        if (arr[0] instanceof String && n instanceof String) {
+            throw new IllegalArgumentException("String type is not allowed in this function");
         }
             
             int left = 0;
@@ -32,11 +32,11 @@ public class SearchAlgorithm {
                 
                 int mid = (left + right) / 2;
                 
-                if (arr[mid] == n) {
+                if (arr[mid].compareTo(n) == 0) {
                     
                     return mid;
                     
-                } else if (arr[mid]<n) {
+                } else if (arr[mid].compareTo(n) < 0) {
                     
                     left = mid + 1;
                     
@@ -46,7 +46,7 @@ public class SearchAlgorithm {
                     
                 }
                 
-                }
+            }
             
         return -1;
     }
